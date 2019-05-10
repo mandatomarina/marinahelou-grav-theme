@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+h1, h2, h3, h4, .archive-list label, .modular .bottom table th,
+.contact label, .callout .pricing-container .pricing-item .name,
+.callout .pricing-container .pricing-item .foot .button,
+.callout .pricing-container .pricing-item .foot .archive-list button,
+.archive-list .callout .pricing-container .pricing-item .foot button,
+.callout .pricing-container .pricing-item .foot .contact button,
+.contact .callout .pricing-container .pricing-item .foot button,
+h5, h6 {
+  font-family: "Ubuntu", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;  
+}
+
+a {
+  color: #9d2153;
+}
+
+
+#header #navbar ul.navigation li a:hover, a:hover {
+  color: #4dd1ba;
+}
+
+#header #navbar ul.navigation li a {
+  font-family: "Ubuntu", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+#header .logo {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  margin-top:2em;
+}
+
+#header .logo h3  a{
+  margin-left:-3000px;
+}
+
+
+.showcase {
+  min-height:300px;
+}
+
+.footer .logo {
+  background-image: url("../images/logo-white.png");
+  background-repeat: no-repeat;
+  margin-top:2em;
+  width:200px;
+}
+
+.footer .logo h3 a {
+  margin-left:-3000px;
+}
+
+.footer {
+  background-color:#9d2153;
+}
