@@ -1,0 +1,29 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+{{ dump(page.header) }}
+
+	<p>{{ page.content }}</p>
+	<table class="votes">
+			<tr>
+				<th>Projeto</th>
+				<th>Ementa Cidadã</th>
+				<th>Voto</th>
+				<th>Justificativa</th>
+				<th>Data</th>
+			</tr>
+		{% for vote in page.header.votes %}
+			<tr class="vote">
+				{% if vote.url %}
+					<td><a href="{{vote.url}}" target="_blank">{{vote.projeto}}</a></td>
+				{% else %}
+					<td>{{vote.projeto}}</td>
+				{% endif %}
+				<td>{{vote.ementa}}</td>
+				<td>{{vote.voto}}</td>
+				<td>{{vote.justificativa}}</td>
+				<td>{{vote.data}}</td>
+			</tr>
+			{% endfor %}
+	</table>
+{% endblock %}

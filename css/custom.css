@@ -72,6 +72,10 @@ a {
   background-color: #ffffff;
 }
 
+.votes {
+  margin-bottom:2em;
+}
+
 .footer .logo {
   background-image: url("../images/logo-white.png");
   background-repeat: no-repeat;
