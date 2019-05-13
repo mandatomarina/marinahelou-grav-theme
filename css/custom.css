@@ -72,9 +72,15 @@ a {
   background-color: #ffffff;
 }
 
+.modular .bottom .button {
+  background-color: #9d2153;
+}
+
+
 .votes {
   margin-bottom:2em;
 }
+
 
 .footer .logo {
   background-image: url("../images/logo-white.png");
