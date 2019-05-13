@@ -73,9 +73,12 @@ a {
 }
 
 .modular .bottom .button {
-  background-color: #9d2153;
+  background-color: #4dd1ba;
 }
 
+.modular .bottom .button:hover {
+  background-color: #9d2153;
+}
 
 .votes {
   margin-bottom:2em;
