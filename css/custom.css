@@ -28,6 +28,9 @@ a {
   font-family: "Ubuntu", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 
+#header #navbar ul.navigation li:hover li.active > a {
+  background-color: #4dd1ba;
+}
 
 #header .logo {
   background-image: url("../images/logo.png");
