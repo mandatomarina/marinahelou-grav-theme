@@ -1,0 +1,34 @@
+<div class="modular-row noticias {{ page.header.class}}">
+    {{ content }}
+    {% for button in page.header.buttons %}
+        <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">{{ button.text }}</a>
+    {% endfor %}
+    <div class="noticia-items">
+      {% for noticia in page.find('/blog').children.order('desc', 'desc').slice(0,5) %}
+           <div class="noticia">
+           <div class="noticia-img">
+              {{ noticia.media.images|first.cropZoom(150,150).html }}
+           </div>
+
+            <div class="noticia-content">
+
+            {% if noticia.header.link %}
+                <h4>
+                    {% if noticia.header.continue_link is not sameas(false) %}
+                    <a href="{{ noticia.url }}"><i class="fa fa-angle-double-right"></i></a>
+                    {% endif %}
+                    <a href="{{ noticia.header.link }}">{{ noticia.title }}</a>
+                </h4>
+            {% else %}
+                <h4><a href="{{ noticia.url }}">{{ noticia.title }}</a></h4>
+            {% endif %}
+
+            {% if noticia.content %}
+              <p>{{ noticia.content|striptags|truncate(140) }}</p>
+              <p><a href="{{ noticia.url }}">Leia mais</a></p>
+            {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

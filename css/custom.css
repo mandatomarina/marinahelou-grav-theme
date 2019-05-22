@@ -68,6 +68,24 @@ a {
   text-transform: none;
 }
 
+
+.modular .noticia h4 {
+  text-align: left;
+}
+
+.modular .noticia .noticia-img {
+  float:left;
+  margin:1.3rem 2rem 0 0;
+}
+
+.modular .noticia .noticia-img img {
+    border-radius: 50%;
+}
+
+.modular .noticia .noticia-content {
+  display:table;
+}
+
 .modular .team {
   background-color: #ffffff;
 }
