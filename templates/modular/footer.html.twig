@@ -3,14 +3,7 @@
         <div class="footer-module large">
             <div class="logo">
                 <h3><a href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a></h3>
-                {% block social %}
-                    {% include 'partials/social.html.twig' %}
-                {% endblock %}
-
             </div>
-            {% if site.footer.description %}
-                <p>{{ site.footer.description }}</p>
-            {% endif %}
         </div>
         <div class="footer-module"><h4>{{ site.footer.links_title }}</h4>
          <ul class="quickmenu">
@@ -19,16 +12,10 @@
             {% endfor %}
         </ul>
     </div>
-    <div class="footer-module">
-        <h4>{{ site.footer.newsletter_title }}</h4>
-        <p>{{ site.footer.newsletter_description }}</p>
-
-        <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri={{ site.footer.feedburner }}', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" class="newsletter">
-        <input type="text" name="email" value="Email" onclick="if(this.value=='Email')this.value='';" onblur="if(this.value=='')this.value='Email';"/>
-        <input type="hidden" value="karolorzel" name="uri"/>
-        <input type="hidden" name="loc" value="en_US"/>
-        <input type="submit" value="OK" />
-        </form>
+    <div class="footer-module social">
+        <a href="https://instagram.com/marina.helou" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://facebook.com/eusouhelou"><i class="fa fa-facebook"></i></a>
+        <a href="https://youtube.com/marinahelou"><i class="fa fa-youtube"></i></a>
     </div>
 </div>
 <hr>
