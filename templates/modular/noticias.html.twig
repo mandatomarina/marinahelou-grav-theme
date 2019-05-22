@@ -4,7 +4,7 @@
         <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">{{ button.text }}</a>
     {% endfor %}
     <div class="noticia-items">
-      {% for noticia in page.find('/blog').children.order('desc', 'desc').slice(0,2) %}
+      {% for noticia in page.find('/blog').children.order('desc', 'desc').slice(0,3) %}
            <div class="noticia">
            <div class="noticia-img">
               {{ noticia.media.images|first.cropZoom(150,150).html }}
