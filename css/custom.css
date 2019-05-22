@@ -68,6 +68,9 @@ a {
   text-transform: none;
 }
 
+.modular .noticia h2 {
+  text-align: center;
+}
 
 .modular .noticia h4 {
   text-align: left;

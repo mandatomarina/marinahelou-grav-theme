@@ -1,5 +1,5 @@
 <div class="modular-row noticias {{ page.header.class}}">
-    {{ content }}
+    <h2>{{ page.header.title }}</h2>
     {% for button in page.header.buttons %}
         <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">{{ button.text }}</a>
     {% endfor %}
