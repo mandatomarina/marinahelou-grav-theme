@@ -25,7 +25,7 @@
 
             {% if noticia.content %}
               <p>{{ noticia.content|striptags|truncate(140) }}</p>
-              <p><a href="{{ noticia.url }}">Leia mais</a></p>
+              <span class="leia-mais"><a href="{{ noticia.url }}">Leia mais</a></span>
             {% endif %}
             </div>
         </div>
