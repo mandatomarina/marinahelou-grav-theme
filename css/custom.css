@@ -29,6 +29,10 @@ h5, h6 {
   text-transform: none;
 }
 
+.modular .bottom .button, .modular .bottom .archive-list button, .archive-list .modular .bottom button, .modular .bottom .contact button, .contact .modular .bottom button {
+  font-family: "Ubuntu", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
 a {
   color: #9d2153;
 }
@@ -236,4 +240,9 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
     font-weight: bold;
   }
 
+}
+
+/* Mailchimp hack */
+#__lpform_mce-EMAIL {
+  display:none !important;
 }
