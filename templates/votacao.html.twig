@@ -5,24 +5,24 @@
 
 	<p>{{ page.content }}</p>
 	<table class="votes">
-			<tr>
+			<thead>
 				<th>Projeto</th>
 				<th>Ementa Cidadã</th>
 				<th>Voto</th>
 				<th>Justificativa</th>
 				<th>Data</th>
-			</tr>
+			</thead>
 		{% for vote in page.header.votes %}
 			<tr class="vote">
 				{% if vote.url %}
-					<td><a href="{{vote.url}}" target="_blank">{{vote.projeto}}</a></td>
+					<td data-label="Projeto"><a href="{{vote.url}}" target="_blank">{{vote.projeto}}</a></td>
 				{% else %}
-					<td>{{vote.projeto}}</td>
+					<td data-label="Projeto">{{vote.projeto}}</td>
 				{% endif %}
-				<td>{{vote.ementa}}</td>
-				<td>{{vote.voto}}</td>
-				<td>{{vote.justificativa}}</td>
-				<td>{{vote.data}}</td>
+				<td data-label="Ementa">{{vote.ementa}}</td>
+				<td data-label="Voto">{{vote.voto}}</td>
+				<td data-label="Justificativa">{{vote.justificativa}}</td>
+				<td data-label="Data">{{vote.data}}</td>
 			</tr>
 			{% endfor %}
 	</table>

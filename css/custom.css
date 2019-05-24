@@ -206,3 +206,34 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
 .footer {
   background-color:#9d2153;
 }
+
+
+/* Votacao.twig CSS */
+@media only all and (max-width: 47.938em) {
+  table.votes {
+    border:0;
+  }
+
+  table.votes thead {
+    display:none;
+  }
+
+  table.votes tr {
+    display:block;
+    border-bottom: 0.1rem solid #ddd;
+    box-shadow:2px 2px 1px #dadada;
+    margin-bottom:20px;
+  }
+
+  table.votes td {
+    display:block;
+    text-align: right;
+  }
+
+  table.votes td::before {
+    content: attr(data-label);
+    float:left;
+    font-weight: bold;
+  }
+
+}
