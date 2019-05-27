@@ -49,6 +49,10 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
   background-image: url('../images/padrao.png');
 }
 
+#header {
+  height:10rem;
+}
+
 #header #navbar ul.navigation li {
   text-transform: none;
 }
@@ -82,7 +86,7 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
   display: block;
   min-width:12rem;
   float:right;
-  margin-top:-1rem;
+  margin-top:-3rem;
   font-size: 2rem;
   color:white;
 }
@@ -97,7 +101,7 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
   }
 }
 #body {
-  padding-top:12rem;
+  padding-top:10rem;
 }
 
 .showcase {
@@ -130,6 +134,61 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
 
 .modular .features {
   padding:0.5rem 0 0.5rem 0;
+}
+
+.modular .fa-participacao {
+  mask-image: url('../images/rede.svg');
+  -webkit-mask-image: url('../images/rede.svg');
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  height:7rem;
+  width:7rem;
+  background-color:#9d2153;
+}
+
+.modular .line-participacao {
+  background-image: linear-gradient(90deg, #34466b, #f7ea79);
+  height:0.5rem;
+  margin-top:-2rem;
+  margin-bottom:2rem;
+}
+
+.modular .fa-meioambiente {
+  mask-image: url('../images/meioambiente.svg');
+  -webkit-mask-image: url('../images/meioambiente.svg');
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  height:7rem;
+  width:7rem;
+  background-color: #9d2153;
+}
+
+.modular .line-meioambiente {
+  background-image: linear-gradient(90deg, #4dd1ba, #238977);
+  height:0.5rem;
+  margin:-2rem 2px 2rem 2px;
+}
+
+.modular .fa-primeirainfancia {
+  mask-image: url('../images/primeirainfancia.svg');
+  -webkit-mask-image: url('../images/primeirainfancia.svg');
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  height:7rem;
+  width:7rem;
+  background-color:#9d2153;
+}
+
+.modular .line-primeirainfancia {
+  background-image: linear-gradient(90deg, #9d2153, #f79f79);
+  height:0.5rem;
+  margin-top:-2rem;
+  margin-bottom:2rem;
+}
+
+.modular .feature-items {
+  overflow: hidden;
+  background-color: #ffffff;
 }
 .modular .noticias {
   padding-bottom:1rem;

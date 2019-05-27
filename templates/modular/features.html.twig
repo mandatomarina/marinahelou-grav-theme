@@ -7,6 +7,7 @@
     {% for feature in page.header.features %}
            <div class="feature">
             {% if feature.icon %}
+            <div class="feature-line line-{{ feature.icon }}"></div>
             <i class="fa fa-fw fa-{{ feature.icon }}"></i>
             <div class="feature-content icon-offset">
             {% else %}
