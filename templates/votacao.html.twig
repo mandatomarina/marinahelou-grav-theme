@@ -1,8 +1,8 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-{{ dump(page.header) }}
 
+{% set votos = loadJson(page.header.votacao_server) %}
 	<p>{{ page.content }}</p>
 	<table class="votes">
 			<thead>
@@ -12,18 +12,21 @@
 				<th>Justificativa</th>
 				<th>Data</th>
 			</thead>
-		{% for vote in page.header.votes %}
+		{% for vote in votos.results %}
+			{% if vote.public %}
 			<tr class="vote">
 				{% if vote.url %}
-					<td data-label="Projeto"><a href="{{vote.url}}" target="_blank">{{vote.projeto}}</a></td>
+					<td data-label="Projeto"><a href="{{vote.url}}" target="_blank">{{vote.tipo}} {{vote.numero}}/{{vote.ano}}</a></td>
 				{% else %}
-					<td data-label="Projeto">{{vote.projeto}}</td>
+					<td data-label="Projeto">{{vote.tipo}} {{vote.numero}}/{{vote.ano}}</td>
 				{% endif %}
-				<td data-label="Ementa">{{vote.ementa}}</td>
+				<td data-label="Ementa">{{vote.ementa_cidada}}</td>
 				<td data-label="Voto">{{vote.voto}}</td>
 				<td data-label="Justificativa">{{vote.justificativa}}</td>
 				<td data-label="Data">{{vote.data}}</td>
 			</tr>
+				{% endif %}
 			{% endfor %}
+
 	</table>
 {% endblock %}
