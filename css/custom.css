@@ -267,12 +267,23 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
   background-color: #ffffff;
 }
 
-.modular .bottom .button, .button {
+.modular .bottom .button {
   background-color: #4dd1ba;
 }
 
-.modular .bottom .button:hover, .button:hover {
+
+.modular .bottom .button:hover {
   background-color: #9d2153;
+}
+
+.button {
+  background-color: #9d2153;
+  border: #9d2153;
+}
+
+.button:hover {
+  background-color: #4dd1ba;
+  border: #4dd1ba;
 }
 
 .votes {
