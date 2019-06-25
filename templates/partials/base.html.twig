@@ -36,6 +36,7 @@
             {% do assets.addJs('theme://js/jquery-scrolltofixed-min.js') %}
             {% do assets.addJs('theme://js/fixed-header.js') %}
         {% endif %}
+        {% do assets.addJs('theme://js/custom.js') %}
     {% endblock %}
 
     {% block assets deferred %}
