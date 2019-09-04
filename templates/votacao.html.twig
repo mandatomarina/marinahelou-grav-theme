@@ -10,10 +10,12 @@
 			{% if vote.public %}
 			<tr class="vote">
 				{% if vote.url %}
-					<td data-label="Projeto" colspan="3"><h2>Projeto: <a href="{{vote.url}}" target="_blank">{{vote.tipo}} {{vote.numero}}/{{vote.ano}}</a></h2></td>
+					<td data-label="Projeto"><h2>Projeto: <a href="{{vote.url}}" target="_blank">{{vote.tipo}} {{vote.numero}}/{{vote.ano}}</a></h2></td>
 				{% else %}
-					<td data-label="Projeto" colspan="3"><h2>Projeto: {{vote.tipo}} {% if vote.numero %}{{vote.numero}}/{{vote.ano}}{% endif %}</h2></td>
+					<td data-label="Projeto"><h2>Projeto: {{vote.tipo}} {% if vote.numero %}{{vote.numero}}/{{vote.ano}}{% endif %}</h2></td>
 				{% endif %}
+					<td>Meu voto</td>
+					<td>Situação</td>
 			</tr>
 			<tr>
 				<td data-label="Ementa" class="ementa">{{vote.ementa_cidada}}</td>
