@@ -5,6 +5,7 @@
 {% set votos = loadJson(page.header.votacao_server) %}
 	<p>{{ page.content }}</p>
 	<table class="votes">
+		<col width="430"><col width="62"><col width="94">
 		{% for vote in votos.results %}
 			{% if vote.public %}
 			<tr class="vote">
@@ -15,9 +16,9 @@
 				{% endif %}
 			</tr>
 			<tr>
-				<td data-label="Ementa" width="70%">{{vote.ementa_cidada}}</td>
-				<td data-label="Voto" rowspan="5" width="15%">{{vote.voto}}</td>
-				<td data-label="Status" rowspan="5" width="15%">{{vote.status}}</td>
+				<td data-label="Ementa">{{vote.ementa_cidada}}</td>
+				<td data-label="Voto" rowspan="5">{{vote.voto}}</td>
+				<td data-label="Status" rowspan="5">{{vote.status}}</td>
 			</tr>
 			<tr>
 	      <td><h2>Justificativa do Voto:</h2></td>
