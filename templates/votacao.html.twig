@@ -9,23 +9,26 @@
 			{% if vote.public %}
 			<tr class="vote">
 				{% if vote.url %}
-					<td data-label="Projeto">Projeto: <a href="{{vote.url}}" target="_blank">{{vote.tipo}} {{vote.numero}}/{{vote.ano}}</a></td>
+					<td data-label="Projeto" colspan="3"><h2>Projeto: <a href="{{vote.url}}" target="_blank">{{vote.tipo}} {{vote.numero}}/{{vote.ano}}</a></h2></td>
 				{% else %}
-					<td data-label="Projeto">{{vote.tipo}} {% if vote.numero %}{{vote.numero}}/{{vote.ano}}{% endif %}</td>
+					<td data-label="Projeto" colspan="3><h2>{{vote.tipo}} {% if vote.numero %}{{vote.numero}}/{{vote.ano}}{% endif %}</h2></td>
 				{% endif %}
 			</tr>
 			<tr>
 				<td data-label="Ementa">{{vote.ementa_cidada}}</td>
-				<td data-label="Voto">{{vote.voto}}</td>
-				<td data-label="Status">{{vote.status}}</td>
+				<td data-label="Voto" rowspan="5">{{vote.voto}}</td>
+				<td data-label="Status" rowspan="5">{{vote.status}}</td>
 			</tr>
+			<tr>
+	      <td><h2>Justificativa do Voto:</h2></td>
+	    </tr>
 			<tr>
 				<td data-label="Justificativa">{{vote.justificativa}}</td>
 			</tr>
 			<tr>
-				<td data-label="Resultado">Resultado no Plenário: {{vote.resultado}}</td>
+				<td data-label="Resultado"><h2>Resultado no Plenário: {{vote.resultado}}</h2></td>
 			<tr>
-				<td data-label="Data">{{vote.data}}</td>
+				<td data-label="Data"><h3>{{vote.data}}</h3></td>
 			</tr>
 				{% endif %}
 			{% endfor %}
