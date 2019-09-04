@@ -294,9 +294,19 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
 
 .votes {
   margin-bottom:2em;
+  border:0;
 }
 
-.votes .voto-Sim, .votes .status-Aprovado {
+.votes h2, .votes h3 {
+  color:#9d2153;
+}
+
+.votes .voto-SIM, .votes .status-Aprovado {
+  background-color:green;
+}
+
+.votes .voto-NAO, .votes .status-Rejeitado {
+  background-color:red;
 }
 
 .votes .voto-, .votes .status-Aguardando {
