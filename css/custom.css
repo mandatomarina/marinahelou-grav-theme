@@ -299,18 +299,23 @@ img.border {background:#ccc; border:4px solid #f0f0f0; color:#333; padding:1px;}
 
 .votes h2, .votes h3 {
   color:#9d2153;
+  margin:0;
+  padding:0;
 }
 
 .votes .voto-SIM, .votes .status-Aprovado {
   background-color:green;
+  text-align: center;
 }
 
 .votes .voto-NAO, .votes .status-Rejeitado {
   background-color:red;
+  text-align: center;
 }
 
 .votes .voto-, .votes .status-Aguardando {
   background-color:#ccc;
+  text-align: center;
 }
 
 .votes td {
