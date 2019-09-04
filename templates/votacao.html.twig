@@ -12,13 +12,13 @@
 				{% if vote.url %}
 					<td data-label="Projeto" colspan="3"><h2>Projeto: <a href="{{vote.url}}" target="_blank">{{vote.tipo}} {{vote.numero}}/{{vote.ano}}</a></h2></td>
 				{% else %}
-					<td data-label="Projeto" colspan="3"><h2>{{vote.tipo}} {% if vote.numero %}{{vote.numero}}/{{vote.ano}}{% endif %}</h2></td>
+					<td data-label="Projeto" colspan="3"><h2>Projeto: {{vote.tipo}} {% if vote.numero %}{{vote.numero}}/{{vote.ano}}{% endif %}</h2></td>
 				{% endif %}
 			</tr>
 			<tr>
-				<td data-label="Ementa">{{vote.ementa_cidada}}</td>
-				<td data-label="Voto" rowspan="5">{{vote.voto}}</td>
-				<td data-label="Status" rowspan="5">{{vote.status}}</td>
+				<td data-label="Ementa" class="ementa">{{vote.ementa_cidada}}</td>
+				<td data-label="Voto" class="voto-{{vote.voto}}" rowspan="5">{{vote.voto}}</td>
+				<td data-label="Status" class="status-{{vote.status}}"" rowspan="5">{{vote.status}}</td>
 			</tr>
 			<tr>
 	      <td><h2>Justificativa do Voto:</h2></td>
